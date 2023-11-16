@@ -1,18 +1,11 @@
-import { useState } from 'react'
+import React from 'react'
+import './index.css'
 
-import './App.css';
 
-function App() {
 
-  return (
-    <>
-  
-   <h1 className="text-3xl font-bold underline">
-Hello world!
-</h1>
- 
-    </>
+function App(){
+  return(
+      <h1 className='text-bold'>Hello World</h1>
   )
 }
-
 export default App
