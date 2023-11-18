@@ -3,6 +3,9 @@ import './index.css'
 
 import Wallet from './Components/wallet'
 
+import Navbar from './Components/Navbar'
+import Exchange from './Components/Exchange'
+
 
 import { EthereumClient, w3mConnectors, w3mProvider } from '@web3modal/ethereum'
 import { Web3Modal } from '@web3modal/react'
@@ -25,9 +28,8 @@ function App() {
     <>
       <WagmiConfig config={wagmiConfig}>
        
-        <h1 className='font-semibold'>Hello World</h1>
-
-        <Wallet />
+     <Exchange/>
+  
       </WagmiConfig>
       <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
     </>
