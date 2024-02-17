@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.css'
 
-import Wallet from './Components/wallet'
+import Wallet from './Components/Wallet'
 
 import Navbar from './Components/Navbar'
 import Exchange from './Components/Exchange'
@@ -26,13 +26,15 @@ const ethereumClient = new EthereumClient(wagmiConfig, chains)
 function App() {
   return (
     <>
+    <div className='bg-black '>
       <WagmiConfig config={wagmiConfig}>
-       
+      <Navbar/> 
      <Exchange/>
   
       </WagmiConfig>
       <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
-    </>
+      </div>
+      </>
   )
 }
 

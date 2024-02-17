@@ -1,13 +1,13 @@
 import React from 'react'
-import Wallet from './wallet'
+import Wallet from './Wallet'
 
 function Exchange() {
   return (
-    <div className=' w-full h-screen flex justify-center items-center'>
+    <div className=' w-full h-screen flex justify-center items-center '>
     <div className=' h-[600px] w-[600px] bg-blue-200
-   mt-40 border rounded-2xl'>
+   mt-40 border rounded-2xl bg-gradient-to-r from-blue-400 to-violet-400 '>
       <div className='flex px-20 py-5 mb-[10px]'>
-        <h1 className='mr-10 text-xl font-semibold text-gray-900'>Swap</h1>
+        <h1 className='mr-10 text-xl font-semibold text-gray-900 '>Swap</h1>
         <h2 className='text-xl font-semibold text-gray-900'>Bridge</h2>
       </div>
 
@@ -21,9 +21,9 @@ function Exchange() {
        <input className='bg-blue-300 h-[40px] w-[40px] mt-[5px]
       ml-[5px]'
       placeholder='0' type='text'  value='0'></input>
-      <div className='bg-gray-300 h-[40px] w-[100px] text-sm
+      <div className='bg-gray-300 h-[40px] w-[100px] text-[20px]
       flex justify-center items-center border rounded-xl mt-[10px] mr-[10px]' >
-       polygon
+      opbnb
       </div>
       </div>
  </div>
@@ -38,9 +38,9 @@ function Exchange() {
       <input className='bg-blue-300 h-[40px] w-[40px] mt-[5px]
       ml-[5px]'
       placeholder='0' type='text'  value='0'></input>
-      <div className='bg-gray-300 h-[40px] w-[100px] text-sm
+      <div className='bg-gray-300 h-[40px] w-[100px] text-[20px]
       flex justify-center items-center border rounded-xl mt-[10px] mr-[10px]' >
-       polygon
+       bsc
       </div>
       </div> 
  </div>
