@@ -3,7 +3,16 @@ import Wallet from './Wallet'
 
 function Exchange() {
   return (
-    <div className=' w-full h-screen flex justify-center items-center '>
+
+ <>
+   
+ <div>
+ <h1 className='text-black flex justify-center text-4xl font-bold bg-gradient-to-r from-blue-600 to-violet-600 text-transparent bg-clip-text'>Interloom</h1>
+ <h1 className='text-black flex justify-center text-2xl font-bold mt-[20px] bg-gradient-to-r from-purple-500 to-purple-900 text-transparent bg-clip-text'>
+ An easy compute solution for BSC leveraging Zero Knowledge.</h1>
+ </div>
+
+    <div className=' w-full h-screen flex justify-center items-center mt-[-80px]'>
     <div className=' h-[600px] w-[600px] bg-blue-200
    mt-40 border rounded-2xl bg-gradient-to-r from-blue-400 to-violet-400 '>
       <div className='flex px-20 py-5 mb-[10px]'>
@@ -40,7 +49,7 @@ function Exchange() {
       placeholder='0' type='text'  value='0'></input>
       <div className='bg-gray-300 h-[40px] w-[100px] text-[20px]
       flex justify-center items-center border rounded-xl mt-[10px] mr-[10px]' >
-       bsc
+       bscp
       </div>
       </div> 
  </div>
@@ -57,6 +66,7 @@ function Exchange() {
     </div>
     </div>
     </div>
+    </>
   )
 }
 

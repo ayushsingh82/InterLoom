@@ -28,8 +28,8 @@ function App() {
     <>
     <div className='bg-black '>
       <WagmiConfig config={wagmiConfig}>
-      <Navbar/> 
-     <Exchange/>
+       
+      <main/>
   
       </WagmiConfig>
       <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
