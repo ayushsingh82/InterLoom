@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Wallet from './Wallet'
 
 const Home = () => {
   return (
@@ -11,6 +12,10 @@ const Home = () => {
         </Link>
         
         <p> A nft gaming platform</p>
+        <Link to={'/nft'}>
+        <button>NFT Game</button>
+        </Link>
+
     </div>
   )
 }

@@ -3,7 +3,6 @@ import './index.css'
 
 import Wallet from './Components/Wallet'
 
-import Navbar from './Components/Navbar'
 import Exchange from './Components/Exchange'
 
 
