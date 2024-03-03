@@ -36,9 +36,9 @@ const NFT = () => {
   };
 
   return (
-    <div className='bg-black h-screen flex flex-col justify-center'>
+    <div className='bg-slate-900 h-screen flex flex-col justify-center'>
       <div className='flex justify-center mt-[-300px]'>
-        <h1 className='text-white text-2xl font-semibold mt-[20px]'>Please provide the details about NFT</h1>
+        <h1 className='text-white text-2xl font-semibold mt-[400px]'>Please provide the details about NFT</h1>
       </div>
 
       <div className='flex flex-col border border-4 border-transparent rounded-xl items-center mt-[40px] bg-blue-100 mx-[330px]'>
@@ -84,6 +84,10 @@ const NFT = () => {
             onChange={handleFileChange}
             className='mt-[20px] border border-2 border-transparent px-[10px]'
           />
+          <br />
+          {formData.file && (
+            <img src={URL.createObjectURL(formData.file)} alt="Uploaded File" style={{ maxWidth: '200px', marginTop: '10px' }} />
+          )}
           <br />
           <button type="submit" className='mt-[20px] border border-4 border-blue-300 px-[10px] py-[5x] rounded-xl font-semibold
           mb-[20px]'>Submit</button>

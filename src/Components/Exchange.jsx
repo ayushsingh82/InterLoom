@@ -4,7 +4,7 @@ import Wallet from './Wallet'
 function Exchange() {
   return (
 
- <div className='bg-black h-screen'>
+ <div className='bg-slate-900 h-screen'>
    
  <div>
  <h1 className='text-white flex justify-center text-4xl font-bold bg-gradient-to-r from-blue-600 to-violet-600 text-transparent bg-clip-text'>Interloom</h1>
