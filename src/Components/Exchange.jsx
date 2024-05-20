@@ -1,7 +1,16 @@
 import React from 'react'
 import Wallet from './Wallet'
+import { useState } from 'react'
 
 function Exchange() {
+
+  const [inputValue, setInputValue] = useState('0');
+  
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+  };
+
+
   return (
 
  <div className='bg-slate-900 h-screen'>
@@ -20,36 +29,52 @@ function Exchange() {
         <h2 className='text-xl font-semibold text-gray-900'>Bridge</h2>
       </div>
 
-      <div className='h-[150px] w-[400px] bg-blue-300 mx-auto border
+      <div className='h-[150px] w-[400px] bg-black/0.5 mx-auto border
       rounded-2xl flex flex-col'>
       <div className=' h-[60px] w-[340px] mx-auto mt-[10px]
-      text-xl py-[5px]'>
+      text-xl py-[5px] text-black font-medium '>
       send</div>
-      <div className='bg-red-300 h-[60px] w-[340px] mx-auto
-      mt-[10px] font-semibold text-4xl flex justify-between'>
-       <input className='bg-blue-300 h-[40px] w-[40px] mt-[5px]
-      ml-[5px]'
-      placeholder='0' type='text'  value='0'></input>
-      <div className='bg-gray-300 h-[40px] w-[100px] text-[20px]
-      flex justify-center items-center border rounded-xl mt-[10px] mr-[10px]' >
-      opbnb
+      <div className='bg-slate-800 h-[60px] w-[340px] mx-auto
+      mt-[10px] font-semibold text-4xl flex justify-between border-2 rounded-md'>
+       <input className='bg-white h-[40px] w-[80px] mt-[7px] border rounded-md border-transparent
+       ml-[5px] text-[20px]  border-none outline-none bg-blue-300 text-black'
+      placeholder='0' type='number'  onChange={handleInputChange} value={inputValue}></input>
+      <div className='bg-white h-[40px] w-[120px] text-[20px]
+      flex justify-center items-center border rounded-xl mt-[10px] mr-[10px] bg-blue-300 text-black' >
+         <select className='bg-transparent border  border-none outline-none  bg-blue-300 text-black'>
+  <option value="1">Fuji  </option>
+  <option value="2">BNB</option>
+  <option value="4">Sepolia</option>
+  <option value="5">Arbitrum</option>
+  <option value="6">Base</option>
+  <option value="7">Optimism</option>
+  <option value="8">Matic</option>
+</select>
       </div>
       </div>
  </div>
 
- <div className='h-[150px] w-[400px] bg-blue-300 mx-auto border
+ <div className='h-[150px] w-[400px] bg-black/0.5 mx-auto border
       mt-[20px] rounded-2xl'>
         <div className=' h-[60px] w-[340px] mx-auto mt-[10px]
-      text-xl py-[10px]'>
+      text-xl py-[10px] text-black font-medium'>
       recieve</div>
-      <div className='bg-red-300 h-[60px] w-[340px] mx-auto
-      mt-[10px] font-semibold text-4xl flex  justify-between'>
-      <input className='bg-blue-300 h-[40px] w-[40px] mt-[5px]
-      ml-[5px]'
-      placeholder='0' type='text'  value='0'></input>
-      <div className='bg-gray-300 h-[40px] w-[100px] text-[20px]
-      flex justify-center items-center border rounded-xl mt-[10px] mr-[10px]' >
-       bscp
+      <div className='bg-slate-800 h-[60px] w-[340px] mx-auto
+      mt-[10px] font-semibold text-4xl flex  justify-between border-2 rounded-md'>
+      <input className='bg-white h-[40px] w-[80px] mt-[7px] border rounded-md border-transparent
+      ml-[5px] text-[20px]  border-none outline-none bg-blue-300 text-black'
+      placeholder='0' type='number'  value='0'></input>
+      <div className='bg-white h-[40px] w-[120px] text-[20px]
+      flex justify-center items-center border rounded-xl mt-[10px] mr-[10px] bg-blue-300 text-black' >
+         <select className='bg-transparent border  border-none outline-none bg-blue-300 text-black'>
+  <option value="1">BNB  </option>
+  <option value="2">Fuji</option>
+  <option value="4">Sepolia</option>
+  <option value="5">Arbitrum</option>
+  <option value="6">Base</option>
+  <option value="7">Optimism</option>
+  <option value="8">Matic</option>
+</select>
       </div>
       </div> 
  </div>
