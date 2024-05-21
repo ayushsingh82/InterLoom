@@ -7,30 +7,10 @@ import NFT from './Components/NFT.jsx'
 import Exchange from './Components/Exchange.jsx'
 import {createBrowserRouter,RouterProvider,createRoutesFromElements} from 'react-router-dom'
 import { Route } from 'react-router-dom'
+import Navbar from './Components/Navbar.jsx'
 
 
 
-// const router=createBrowserRouter([
-//   {
-//     path:'/',
-//     element:<App/>, 
-//     children:[
-//       {
-//         paths:'/',
-//         element:<Home/>
-//       },
-//       {
-//         path:'/nft',
-//         element:<NFT/>
-//       },
-//       {
-//         path:'/exchange',
-//         element:<Exchange/>
-//       },
-//     ]
-
-//   }
-// ])
 
 
 const router=createBrowserRouter(
@@ -47,7 +27,7 @@ const router=createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-  
+  <Navbar/>
     <RouterProvider router={router}/>
 
   </React.StrictMode>,
