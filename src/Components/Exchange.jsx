@@ -15,10 +15,10 @@ function Exchange() {
 
  <div className='bg-slate-900 h-screen'>
    
- <div>
- <h1 className='text-white flex justify-center text-4xl font-bold bg-gradient-to-r from-blue-600 to-violet-600 text-transparent bg-clip-text'>Interloom</h1>
+ <div className=''>
+ <h1 className='text-pink-500 flex justify-center text-4xl font-bold '>MonadDex</h1>
  <h1 className='text-white flex justify-center text-2xl font-bold mt-[20px] bg-gradient-to-r from-purple-500 to-purple-900 text-transparent bg-clip-text'>
- An easy compute solution for BSC leveraging Zero Knowledge.</h1>
+Prebuild interface by MonadStarter to save your time</h1>
  </div>
 
     <div className=' w-full h-screen flex justify-center items-center mt-[-80px]'>
@@ -34,7 +34,7 @@ function Exchange() {
       <div className=' h-[60px] w-[340px] mx-auto mt-[10px]
       text-xl py-[5px] text-black font-medium '>
       send</div>
-      <div className='bg-slate-800 h-[60px] w-[340px] mx-auto
+      <div className='bg-blue-400 h-[60px] w-[340px] mx-auto
       mt-[10px] font-semibold text-4xl flex justify-between border-2 rounded-md'>
        <input className='bg-white h-[40px] w-[80px] mt-[7px] border rounded-md border-transparent
        ml-[5px] text-[20px]  border-none outline-none bg-blue-300 text-black'
@@ -59,7 +59,7 @@ function Exchange() {
         <div className=' h-[60px] w-[340px] mx-auto mt-[10px]
       text-xl py-[10px] text-black font-medium'>
       recieve</div>
-      <div className='bg-slate-800 h-[60px] w-[340px] mx-auto
+      <div className='bg-blue-400 h-[60px] w-[340px] mx-auto
       mt-[10px] font-semibold text-4xl flex  justify-between border-2 rounded-md'>
       <input className='bg-white h-[40px] w-[80px] mt-[7px] border rounded-md border-transparent
       ml-[5px] text-[20px]  border-none outline-none bg-blue-300 text-black'
@@ -87,7 +87,7 @@ function Exchange() {
     <div className='mx-auto mt-[20px] h-[40px] bg:transparent w-[400px]
     flex items-center justify-center  rounded-2xl'>
       <h1 className='text-2xl tracking-wide'>Powered by 
-      <span className='text-2xl font-semibold '> Interllom</span></h1>
+      <span className='text-2xl font-semibold text-blue-900'> MonadDex</span></h1>
     </div>
     </div>
     </div>

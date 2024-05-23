@@ -37,10 +37,11 @@ const NFT = () => {
 
   return (
     <div className='bg-slate-900 h-screen flex flex-col justify-center'>
-      <div className='flex justify-center mt-[-300px]'>
-        <h1 className='text-white text-2xl font-semibold mt-[400px]'>Please provide the details about NFT</h1>
-      </div>
-
+    <div>
+    <h1 className='text-pink-500 flex justify-center text-4xl font-bold '>MonadNFT</h1>
+    <h1 className='text-white flex justify-center text-2xl font-bold mt-[20px] bg-gradient-to-r from-purple-500 to-purple-900 text-transparent bg-clip-text'>
+   Prebuild interface by MonadStarter to save your time</h1>
+    </div>
       <div className='flex flex-col border border-4 border-transparent rounded-xl items-center mt-[40px] bg-blue-100 mx-[330px]'>
         <form onSubmit={handleSubmit}>
           <input

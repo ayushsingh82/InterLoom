@@ -8,7 +8,7 @@ import Exchange from './Components/Exchange.jsx'
 import {createBrowserRouter,RouterProvider,createRoutesFromElements} from 'react-router-dom'
 import { Route } from 'react-router-dom'
 import Navbar from './Components/Navbar.jsx'
-
+import Footer from './Components/Footer.jsx'
 
 
 
@@ -29,6 +29,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
   <Navbar/>
     <RouterProvider router={router}/>
+    <Footer/>
 
   </React.StrictMode>,
 )
